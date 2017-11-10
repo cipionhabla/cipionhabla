@@ -15,9 +15,9 @@
 html {
   height: 100%;
   color: #171344;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-size: 1em;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 body {
@@ -133,6 +133,10 @@ hr {
   border-top: 4px dotted #bdd3e0;
 }
 
+a {
+  color: #e6203e;
+}
+
 .space-stack-s {
   margin-bottom: .5rem;
 }
@@ -205,6 +209,11 @@ hr {
 .wrapper-body-dark {
   padding: 2rem;
   background-color: #d9d9d9;
+}
+
+.summary-hi {
+  font-size: 8em;
+  line-height: 1.2;
 }
 
 
