@@ -1,0 +1,37 @@
+/* ==========================================================================
+   #Page
+   ========================================================================== */
+
+html {
+  height: 100%;
+  color: #171344;
+  font-family: $font-family;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+body {
+  min-height: 100%;
+  padding-top: 36rem;
+  padding-bottom: 10rem;
+  background-color: #171344;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 4px dotted #bdd3e0;
+  margin: 1em 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}

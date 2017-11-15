@@ -1,0 +1,57 @@
+///* ========================================================================
+//   #Global
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+/* ==========================================================================
+   Fonts Variables
+   ========================================================================== */
+$font-family: Verdana, Geneva, sans-serif;
+$font-family-secondary: Georgia, Times, serif;
+
+/* Font Size
+   ========================================================================== */
+$font-size-base: 62.5%;
+$font-size-xs: 1rem;
+$font-size-s: 1.2rem;
+$font-size-m: 1.4rem;
+$font-size-l: 1.6rem;
+$font-size-xl: 2.4rem;
+$font-size-xxl: 2.7rem;
+$font-size-xxxl: 3.6rem;
+
+/* ==========================================================================
+   Space
+   ========================================================================== */
+
+/* Use padding.
+   ========================================================================== */
+$space-inset-default: 1.6rem;
+$space-inset-xs: .4rem;
+$space-inset-s: .8rem;
+$space-inset-m: 1.6rem;
+$space-inset-l: 3.2rem;
+
+/* Use padding.
+   ========================================================================== */
+$space-inset-squish-default: .8rem 1.6rem;
+$space-inset-squish-s: .4rem .8rem;
+$space-inset-squish-m: .8rem 1.6rem;
+$space-inset-squish-l: 1.6rem 3.2rem;
+
+/* Use margin-bottom
+   ========================================================================== */
+$space-stack-default: 1.6rem;
+$space-stack-xs: .4rem;
+$space-stack-s: .8rem;
+$space-stack-m: 1.6rem;
+$space-stack-l: 3.2rem;
+
+/* Use margin-left
+   ========================================================================== */
+$space-inline-default: 1.6rem;
+$space-inline-xs: .4rem;
+$space-inline-s: .8rem;
+$space-inline-m: 1.6rem;
+$space-inline-l: 3.2rem;

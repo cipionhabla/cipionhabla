@@ -1,0 +1,34 @@
+{
+  "name": "cipionhabla",
+  "version": "1.0.0",
+  "description": "This is my portfolio which will allow me to get out of my comfort zone and do cool things.",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cipionhabla/cipionhabla.git"
+  },
+  "keywords": [
+    "cool",
+    "comfort",
+    "fuck",
+    "shit",
+    "hate",
+    "love"
+  ],
+  "author": "Jair Cárdenas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cipionhabla/cipionhabla/issues"
+  },
+  "homepage": "https://github.com/cipionhabla/cipionhabla#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
