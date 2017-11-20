@@ -5,6 +5,19 @@
 // need to be made available to the entire codebase.
 
 /* ==========================================================================
+   Color Variables
+   ========================================================================== */
+$white: #fff;
+$gray: #d9d9d9;
+$blue-space: #171344;
+$blue-light: #bdd3e0;
+
+$color-content: $white;
+$color-content-secondary: $gray;
+$color-text: $blue-space;
+$color-border: $blue-light;
+
+/* ==========================================================================
    Fonts Variables
    ========================================================================== */
 $font-family: Verdana, Geneva, sans-serif;

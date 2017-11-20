@@ -5,3 +5,25 @@ h1,
 h2 {
   font-family: $font-family-secondary;
 }
+
+h1 {
+  font-size: $font-size-xxxl;
+  line-height: 1.25;
+}
+
+h2 {
+  margin-bottom: $space-stack-m;
+  font-size: $font-size-xxl;
+  line-height: 1.25;
+}
+
+h3 {
+  margin-bottom: $space-stack-s;
+  font-size: $font-size-xl;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: $font-size-l;
+  line-height: 1.25;
+}

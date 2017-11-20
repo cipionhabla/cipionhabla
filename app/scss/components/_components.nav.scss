@@ -1,0 +1,29 @@
+.nav {
+  padding-left: 0;
+  margin-bottom: $space-stack-l;
+  text-align: center;
+}
+
+.nav__item {
+  display: inline-block;
+  margin-left: $space-inline-m;
+  font-size: $font-size-xl;
+  font-weight: bold;
+
+  &:first-child {
+    margin-left: 0 !important;
+  }
+
+  > a {
+    display: block;
+
+    > svg {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  @media only screen and (min-width: 35em) {
+    margin-left: $space-inline-l;
+  }
+}

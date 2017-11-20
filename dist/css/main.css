@@ -62,6 +62,9 @@
  * Hide.................Helper classes to hide content
  */
 /* ==========================================================================
+   Color Variables
+   ========================================================================== */
+/* ==========================================================================
    Fonts Variables
    ========================================================================== */
 /* Font Size
@@ -78,13 +81,57 @@
 /* Use margin-left
    ========================================================================== */
 /* ==========================================================================
-   #box-sizing
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
-html {
-  box-sizing: border-box; }
-
-*, *:before, *:after {
-  box-sizing: inherit; }
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  a,
+  a:visited {
+    text-decoration: underline; }
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  pre {
+    white-space: pre-wrap !important; }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+  thead {
+    display: table-header-group; }
+  tr,
+  img {
+    page-break-inside: avoid; }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  h2,
+  h3 {
+    page-break-after: avoid; } }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -470,16 +517,17 @@ template {
   display: none; }
 
 /* ==========================================================================
+   #box-sizing
+   ========================================================================== */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* ==========================================================================
    #Shared
    ========================================================================== */
-/**
- * Shared declarations for certain elements.
- */
-/*
-  * Remove the gap between audio, canvas, iframes,
-  * images, videos and the bottom of their containers:
-  * https://github.com/h5bp/html5-boilerplate/issues/440
-  */
 audio,
 canvas,
 iframe,
@@ -488,14 +536,19 @@ svg,
 video {
   vertical-align: middle; }
 
-/**
- * Always declare margins in the same direction:
- * csswizardry.com/2012/06/single-direction-margin-declarations
- */
 address,
-h1, h2, h3, h4, h5, h6,
-blockquote, p, pre,
-dl, ol, ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+ol,
+ul,
 figure,
 hr,
 table,
@@ -503,11 +556,22 @@ fieldset {
   margin-top: 0;
   margin-bottom: 0; }
 
-/**
- * Consistent indentation for lists.
- */
-dd, ol, ul {
+dd,
+ol,
+ul {
   margin-left: 0; }
+
+.space-stack-s {
+  margin-bottom: 0.8rem; }
+
+.space-stack-m {
+  margin-bottom: 1.6rem; }
+
+.browserupgrade {
+  margin: .2em 0;
+  background: #171344;
+  color: #fff;
+  padding: .2em 0; }
 
 /* ==========================================================================
    #Page
@@ -516,12 +580,12 @@ html {
   height: 100%;
   color: #171344;
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 1em;
+  font-size: 62.5%;
   line-height: 1.5; }
 
 body {
   min-height: 100%;
-  padding-top: 36rem;
+  padding-top: 55rem;
   padding-bottom: 10rem;
   background-color: #171344; }
 
@@ -530,7 +594,7 @@ hr {
   height: 1px;
   border: 0;
   border-top: 4px dotted #bdd3e0;
-  margin: 1em 0;
+  margin: 1.6rem 0;
   padding: 0; }
 
 ::-moz-selection {
@@ -547,6 +611,36 @@ hr {
 h1,
 h2 {
   font-family: Georgia, Times, serif; }
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 1.25; }
+
+h2 {
+  margin-bottom: 1.6rem;
+  font-size: 2.7rem;
+  line-height: 1.25; }
+
+h3 {
+  margin-bottom: 0.8rem;
+  font-size: 2.4rem;
+  line-height: 1.25; }
+
+h4 {
+  font-size: 1.6rem;
+  line-height: 1.25; }
+
+/* ==========================================================================
+   #Paragraphs
+   ========================================================================== */
+p {
+  font-size: 1.6rem; }
+
+/* ==========================================================================
+   #Anchors
+   ========================================================================== */
+a {
+  color: #e6203e; }
 
 /* ==========================================================================
    #Forms
@@ -568,53 +662,42 @@ textarea {
 /* ==========================================================================
    #Spacecraft
    ========================================================================== */
+.spacecraft {
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto; }
+
 .spacecraft-command {
   position: relative;
   border-bottom: 24px dotted #bdd3e0;
-  background-color: #ffffff; }
+  border-radius: 200px 200px 0 0;
+  background-color: #fff; }
 
 .spacecraft-command::before {
   content: "";
   position: absolute;
-  top: -520px;
+  top: -400px;
   right: 0;
   left: 0;
   z-index: -10;
-  height: 880px;
+  height: 1400px;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .spacecraft-stage-light {
-  padding: 2rem;
-  background-color: #ffffff; }
+  padding: 3.2rem;
+  background-color: #fff; }
 
 .spacecraft-stage-dark {
-  padding: 2rem;
+  padding: 3.2rem;
   background-color: #d9d9d9; }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0; }
+.summary-hi {
+  font-size: 8em;
+  line-height: 1.2; }
 
 /* ==========================================================================
-   Global classes
-   ========================================================================== */
-a {
-  color: #e6203e; }
-
-.space-stack-s {
-  margin-bottom: .5rem; }
-
-.space-stack-m {
-  margin-bottom: 1rem; }
-
-/* ==========================================================================
-   Author's custom styles
+   #Stars
    ========================================================================== */
 .space,
 .stars {
@@ -632,158 +715,41 @@ a {
   background-repeat: repeat;
   background-size: 200px 200px; }
 
+/* ==========================================================================
+   #Illustrations
+   ========================================================================== */
 .img-space-guy {
   position: absolute;
-  top: -312px;
+  top: -280px;
   left: 50%;
   margin-left: -128px;
   width: 100%;
   max-width: 256px; }
 
-.wrapper {
-  width: 90%;
-  max-width: 768px;
-  margin: 0 auto; }
+.img-title {
+  vertical-align: bottom; }
 
-.summary-hi {
-  font-size: 8em;
-  line-height: 1.2; }
+.nav {
+  padding-left: 0;
+  margin-bottom: 3.2rem;
+  text-align: center; }
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-/*
- * Hide visually and from screen readers
- */
-.hidden {
-  display: none !important; }
+.nav__item {
+  display: inline-block;
+  margin-left: 1.6rem;
+  font-size: 2.4rem;
+  font-weight: bold; }
+  .nav__item:first-child {
+    margin-left: 0 !important; }
+  .nav__item > a {
+    display: block; }
+    .nav__item > a > svg {
+      display: block;
+      margin: 0 auto; }
+  @media only screen and (min-width: 35em) {
+    .nav__item {
+      margin-left: 3.2rem; } }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-  /* 1 */ }
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-  clip: auto;
-  -webkit-clip-path: none;
-  clip-path: none;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit; }
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-.invisible {
-  visibility: hidden; }
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */ }
-
-.clearfix:after {
-  clear: both; }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-
-@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-    box-shadow: none !important;
-    text-shadow: none !important; }
-  a,
-  a:visited {
-    text-decoration: underline; }
-  a[href]:after {
-    content: " (" attr(href) ")"; }
-  abbr[title]:after {
-    content: " (" attr(title) ")"; }
-  /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: ""; }
-  pre {
-    white-space: pre-wrap !important; }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid; }
-  /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  thead {
-    display: table-header-group; }
-  tr,
-  img {
-    page-break-inside: avoid; }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3; }
-  h2,
-  h3 {
-    page-break-after: avoid; } }
+.logo {
+  display: block;
+  text-align: center; }
