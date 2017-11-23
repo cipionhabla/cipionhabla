@@ -585,9 +585,12 @@ html {
 
 body {
   min-height: 100%;
-  padding-top: 55rem;
-  padding-bottom: 10rem;
+  padding-top: 45rem;
+  padding-bottom: 40rem;
   background-color: #171344; }
+  @media only screen and (min-width: 35em) {
+    body {
+      padding-bottom: 60rem; } }
 
 hr {
   display: block;
@@ -679,17 +682,19 @@ textarea {
   top: -400px;
   right: 0;
   left: 0;
-  z-index: -10;
+  z-index: -100;
   height: 1400px;
   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
   background-color: #fff; }
 
-.spacecraft-stage-light {
-  padding: 3.2rem;
+.spacecraft-stage {
+  position: relative;
+  padding: 3.2rem; }
+
+.spacecraft-stage--light {
   background-color: #fff; }
 
-.spacecraft-stage-dark {
-  padding: 3.2rem;
+.spacecraft-stage--dark {
   background-color: #d9d9d9; }
 
 .summary-hi {
@@ -707,13 +712,171 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: -10;
+  z-index: -200;
   background-color: #171344; }
 
 .stars {
   background-image: radial-gradient(2px 2px at 20px 30px, #eee, transparent), radial-gradient(2px 2px at 40px 70px, #fff, transparent), radial-gradient(2px 2px at 50px 160px, #ddd, transparent), radial-gradient(2px 2px at 90px 40px, #fff, transparent), radial-gradient(2px 2px at 130px 80px, #fff, transparent), radial-gradient(2px 2px at 160px 120px, #ddd, transparent);
   background-repeat: repeat;
   background-size: 200px 200px; }
+
+/* ==========================================================================
+   #Aileron
+   ========================================================================== */
+.aileron {
+  position: absolute;
+  bottom: 0;
+  width: 15px;
+  height: 150px;
+  background-color: #d9d9d9; }
+  .aileron::before {
+    content: "";
+    position: absolute;
+    top: -15px; }
+    @media only screen and (min-width: 50em) {
+      .aileron::before {
+        top: -50px; } }
+  @media only screen and (min-width: 50em) {
+    .aileron {
+      width: 50px; } }
+
+.aileron--left {
+  left: -15px; }
+  .aileron--left::before {
+    left: 0;
+    border-bottom: 15px solid #d9d9d9;
+    border-left: 15px solid transparent; }
+    @media only screen and (min-width: 50em) {
+      .aileron--left::before {
+        border-bottom-width: 50px;
+        border-left-width: 50px; } }
+  @media only screen and (min-width: 50em) {
+    .aileron--left {
+      left: -50px; } }
+
+.aileron--right {
+  right: -15px; }
+  .aileron--right::before {
+    right: 0;
+    border-bottom: 15px solid #d9d9d9;
+    border-right: 15px solid transparent; }
+    @media only screen and (min-width: 50em) {
+      .aileron--right::before {
+        border-bottom-width: 50px;
+        border-right-width: 50px; } }
+  @media only screen and (min-width: 50em) {
+    .aileron--right {
+      right: -50px; } }
+
+/* ==========================================================================
+   #Engines
+   ========================================================================== */
+.engine {
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+.engine__trapezium {
+  position: absolute;
+  top: 0;
+  z-index: -100;
+  height: 0;
+  border-bottom: 125px solid #d9d9d9;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  margin-left: -100px; }
+  @media only screen and (min-width: 35em) {
+    .engine__trapezium {
+      width: 400px;
+      border-bottom-width: 200px;
+      border-left-width: 125px;
+      border-right-width: 125px;
+      margin-left: -200px; } }
+  @media only screen and (min-width: 50em) {
+    .engine__trapezium {
+      width: 500px;
+      border-bottom-width: 250px;
+      border-left-width: 150px;
+      border-right-width: 150px;
+      margin-left: -250px; } }
+
+.engine__trapezium--center {
+  left: 50%;
+  z-index: -90; }
+
+.engine__trapezium--left,
+.engine__trapezium--right {
+  top: -25px;
+  border-bottom-color: #b3b3b3; }
+
+.engine__trapezium--left {
+  left: 40%; }
+
+.engine__trapezium--right {
+  left: 60%; }
+
+/* ==========================================================================
+   #Fire
+   ========================================================================== */
+.fire {
+  position: absolute;
+  top: 280px;
+  left: 0;
+  right: 0; }
+
+.fire__diamond {
+  position: absolute;
+  top: 0;
+  z-index: -200;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px 250px;
+  margin-left: -75px;
+  background-color: #f27032;
+  transform: rotate(45deg); }
+  @media only screen and (min-width: 35em) {
+    .fire__diamond {
+      width: 290px;
+      height: 290px;
+      border-radius: 10px 250px;
+      margin-left: -145px; } }
+  @media only screen and (min-width: 50em) {
+    .fire__diamond {
+      width: 400px;
+      height: 400px;
+      border-radius: 10px 300px;
+      margin-left: -200px; } }
+  .fire__diamond::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px 250px;
+    background-color: #f6d866; }
+    @media only screen and (min-width: 35em) {
+      .fire__diamond::after {
+        width: 225px;
+        height: 225px;
+        border-radius: 10px 200px; } }
+    @media only screen and (min-width: 50em) {
+      .fire__diamond::after {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px 250px; } }
+
+.fire__diamond--center {
+  left: 50%;
+  z-index: -190; }
+
+.fire__diamond--left,
+.fire__diamond--right {
+  top: -50px; }
+
+.fire__diamond--left {
+  left: 35%; }
+
+.fire__diamond--right {
+  left: 65%; }
 
 /* ==========================================================================
    #Illustrations

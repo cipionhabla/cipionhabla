@@ -12,9 +12,12 @@ html {
 
 body {
   min-height: 100%;
-  padding-top: 55rem;
-  padding-bottom: 10rem;
+  padding-top: 45rem;
+  padding-bottom: 40rem;
   background-color: $color-text;
+  @media only screen and (min-width: 35em) {
+    padding-bottom: 60rem;
+  }
 }
 
 hr {

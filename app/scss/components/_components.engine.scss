@@ -1,0 +1,54 @@
+/* ==========================================================================
+   #Engines
+   ========================================================================== */
+
+.engine {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.engine__trapezium {
+  position: absolute;
+  top: 0;
+  z-index: -100;
+  height: 0;
+  border-bottom: 125px solid $color-content-secondary;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  margin-left: -100px;
+  @media only screen and (min-width: 35em) {
+    width: 400px;
+    border-bottom-width: 200px;
+    border-left-width: 125px;
+    border-right-width: 125px;
+    margin-left: -200px;
+  }
+
+  @media only screen and (min-width: 50em) {
+    width: 500px;
+    border-bottom-width: 250px;
+    border-left-width: 150px;
+    border-right-width: 150px;
+    margin-left: -250px;
+  }
+}
+
+.engine__trapezium--center {
+  left: 50%;
+  z-index: -90;
+}
+
+.engine__trapezium--left,
+.engine__trapezium--right {
+  top: -25px;
+  border-bottom-color: darken($color-content-secondary, 15%);
+}
+
+.engine__trapezium--left {
+  left: 40%;
+}
+
+.engine__trapezium--right {
+  left: 60%;
+}

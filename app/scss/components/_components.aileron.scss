@@ -1,0 +1,64 @@
+/* ==========================================================================
+   #Aileron
+   ========================================================================== */
+
+.aileron {
+  position: absolute;
+  bottom: 0;
+  width: 15px;
+  height: 150px;
+  background-color: $color-content-secondary;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+
+    @media only screen and (min-width: 50em) {
+      top: -50px;
+    }
+  }
+
+  @media only screen and (min-width: 50em) {
+    width: 50px;
+  }
+}
+
+.aileron--left {
+  left: -15px;
+
+  &::before {
+    left: 0;
+    border-bottom: 15px solid $color-content-secondary;
+    border-left: 15px solid transparent;
+
+    @media only screen and (min-width: 50em) {
+      border-bottom-width: 50px;
+      border-left-width: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 50em) {
+    left: -50px;
+  }
+
+}
+
+.aileron--right {
+  right: -15px;
+
+  &::before {
+    right: 0;
+    border-bottom: 15px solid $color-content-secondary;
+    border-right: 15px solid transparent;
+
+    @media only screen and (min-width: 50em) {
+      border-bottom-width: 50px;
+      border-right-width: 50px;
+    }
+  }
+
+  @media only screen and (min-width: 50em) {
+    right: -50px;
+  }
+}
