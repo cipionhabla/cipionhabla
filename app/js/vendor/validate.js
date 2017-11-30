@@ -156,7 +156,7 @@
 
 		// If field is required and empty
 		if (validity.valueMissing) {
-			
+
 			if (field.type === 'select-multiple') return localSettings.messageValueMissingSelectMulti;
 
 			if (field.type === 'select-one') return localSettings.messageValueMissingSelect;
@@ -247,7 +247,7 @@
 		// If not, create one
 		var message = field.form.querySelector('.' + localSettings.errorClass + '#error-for-' + id );
 		if (!message) {
-			message = document.createElement('div');
+			message = document.createElement('p');
 			message.className = localSettings.errorClass;
 			message.id = 'error-for-' + id;
 
