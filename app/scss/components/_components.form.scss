@@ -1,0 +1,83 @@
+/* ==========================================================================
+   #Form
+   ========================================================================== */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 512px;
+  margin: 0 auto $space-stack-m;
+  font-size: $font-size-l;
+  @media only screen and (min-width: 50em) {
+    flex-direction: row;
+  }
+}
+
+.form-illustration,
+.form-wrapper {
+  flex: 1;
+  padding: $space-inset-m;
+}
+
+.form-illustration {
+  background-color: $color-red-space;
+  border-radius: $border-radius-l $border-radius-l 0 0;
+  @media only screen and (min-width: 50em) {
+    border-radius: $border-radius-l 0 0 $border-radius-l;
+  }
+}
+
+.form-wrapper {
+  background-color: $color-text;
+  border-radius: 0 0 $border-radius-l $border-radius-l;
+  @media only screen and (min-width: 50em) {
+    border-radius: 0 $border-radius-l $border-radius-l 0;
+  }
+}
+
+.form-group {
+  margin-bottom: $space-stack-m;
+}
+
+.form-label {
+  display: block;
+  width: 124px;
+  color: $color-border;
+  font-size: $font-size-m;
+}
+
+.form-control {
+  width: 100%;
+  padding: $space-inset-s;
+  border: 1px solid transparent;
+  border-bottom-color: $color-border;
+  background-color: transparent;
+  color: $color-content;
+
+  + .error-message {
+    margin-top: $space-stack-xs;
+  }
+}
+
+.form-button {
+  padding: $space-inset-squish-m;
+  border-color: transparent;
+  border-radius: $border-radius-l;
+  background-color: $color-red-space;
+  color: $color-content;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-red-space, 5%);
+  }
+}
+
+.error {
+  border-bottom-color: $color-red-space;
+}
+
+.error-message {
+  color: $color-red-space;
+  font-size: $font-size-s;
+  line-height: 1.2;
+}
