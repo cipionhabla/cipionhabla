@@ -1,0 +1,10 @@
+/* ==========================================================================
+   #Abbreviations
+   ========================================================================== */
+abbr[title] {
+  border-bottom: 4px solid $color-text;
+  border-bottom-style: dotted;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
