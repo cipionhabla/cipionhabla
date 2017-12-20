@@ -3,5 +3,9 @@
    ========================================================================== */
 
 a {
-  color: #e6203e;
+  color: $color-red-space;
+
+  &:hover {
+    color: darken($color-red-space, 10%);
+  }
 }

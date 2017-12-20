@@ -6,7 +6,7 @@
   position: absolute;
   bottom: 0;
   width: 15px;
-  height: 150px;
+  height: 250px;
   background-color: $color-content-secondary;
 
   &::before {
@@ -14,12 +14,12 @@
     position: absolute;
     top: -15px;
 
-    @media only screen and (min-width: 55em) {
+    @media only screen and (min-width: 56em) {
       top: -50px;
     }
   }
 
-  @media only screen and (min-width: 55em) {
+  @media only screen and (min-width: 56em) {
     width: 50px;
   }
 }
@@ -32,13 +32,13 @@
     border-bottom: 15px solid $color-content-secondary;
     border-left: 15px solid transparent;
 
-    @media only screen and (min-width: 55em) {
+    @media only screen and (min-width: 56em) {
       border-bottom-width: 50px;
       border-left-width: 50px;
     }
   }
 
-  @media only screen and (min-width: 55em) {
+  @media only screen and (min-width: 56em) {
     left: -50px;
   }
 
@@ -52,13 +52,13 @@
     border-bottom: 15px solid $color-content-secondary;
     border-right: 15px solid transparent;
 
-    @media only screen and (min-width: 55em) {
+    @media only screen and (min-width: 56em) {
       border-bottom-width: 50px;
       border-right-width: 50px;
     }
   }
 
-  @media only screen and (min-width: 55em) {
+  @media only screen and (min-width: 56em) {
     right: -50px;
   }
 }

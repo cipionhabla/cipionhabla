@@ -45,6 +45,15 @@
   text-align: center;
 }
 
+.spacecraft-signature {
+  font-size: $font-size-xs;
+  text-align: center;
+
+  > a {
+    display: inline-block;
+  }
+}
+
 .summary-hi {
   font-size: 8em;
   line-height: 1.2;
