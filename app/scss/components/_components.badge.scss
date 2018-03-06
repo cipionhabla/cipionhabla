@@ -1,0 +1,14 @@
+.badge {
+  display: inline-block;
+  padding: $space-inset-squish-s;
+  border-radius: $border-radius-s;
+  font-size: $font-size-xs;
+  font-weight: bold;
+  line-height: 1;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  &--primary {
+    background-color: $blue-light;
+  }
+}

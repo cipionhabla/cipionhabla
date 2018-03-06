@@ -5,6 +5,10 @@ var uglify = require('gulp-uglify');
 var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 
+gulp.task('includes', function() {
+  return gulp.src('app/includes/*.php')
+  .pipe(gulp.dest('dist/includes'))
+})
 
 gulp.task('sass', function(){
   return gulp.src('app/scss/**/*.scss')
@@ -20,9 +24,9 @@ gulp.task('watch', ['useref'], function(){
 })
 
 gulp.task('useref', function(){
-  return gulp.src('app/*.html')
+  return gulp.src('app/*.php')
     .pipe(useref())
     // Minifies only if it's a JavaScript file
     .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dist'));
 });

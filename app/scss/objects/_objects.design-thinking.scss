@@ -1,0 +1,16 @@
+.design-thinking {
+  display: flex;
+  margin-bottom: $space-stack-m;
+
+  &__item {
+    margin-right: $space-inline-l;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    > p {
+      text-align: center;
+    }
+  }
+}

@@ -7,4 +7,8 @@ p {
   @media only screen and (min-width: 50em) {
     font-size: 1.8rem;
   }
+
+  &.indent {
+    text-indent: $space-inline-l;
+  }
 }

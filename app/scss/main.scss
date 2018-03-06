@@ -84,13 +84,14 @@
 @import "elements/elements.anchors";
 // @import "elements/elements.images";
 @import "elements/elements.forms";
+@import "elements/elements.svg";
 @import "elements/elements.abbreviations";
 
 // OBJECTS
 //
 // Uncomment and add to this section as necessary.
 @import "objects/objects.spacecraft";
-// @import "objects/objects.layout";
+@import "objects/objects.design-thinking";
 // @import "objects/objects.media";
 // @import "objects/objects.flag";
 // @import "objects/objects.list-bare";
@@ -113,6 +114,7 @@
 @import "components/components.nav";
 @import "components/components.form";
 @import "components/components.modal";
+@import "components/components.badge";
 
 // UTILITIES
 // @import "utilities/utilities.clearfix";
