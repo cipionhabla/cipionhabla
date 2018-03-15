@@ -71,6 +71,7 @@
               <hr>
               <h3>Usability Testing at Bizagi</h3>
               <h4>Elements: <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></h4>
+              <p>Sadly Bizagi can't gather data of use from his products, why? Maybe an outdated privacy policy or something else. So to test their products I did some research and find the Usability Testing method.</p>
               <p>Allows product team identifies user frustrations and problems. To achieve that, I did more than fifty interviews to confirm pain points or uncover new ones, and report <strong>insights</strong> for iterate over the products.</p>
               <hr>
               <h3>UX Design (<abbr title="Information architecture">ia</abbr> and flows)</h3>
