@@ -53,7 +53,7 @@
               <h3>Bizagi App</h3>
               <h4>Elements: <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></h4>
               <p>Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. But it's not all a bed of roses, the usability problems on the app was huge, especially in the login and navigation features.</p>
-              <p class="indent space-stack-m">So the <strong>goal was to make a redesign to improve overall usability</strong>. And I, under the methodology of Design Thinking, focused on three main steps: Understand, Explore and Materialize:</p>
+              <p class="indent space-stack-m">So the <strong>goal was to make a redesign to improve the overall experience</strong>. And I, under the methodology of Design Thinking, focused on three main steps: Understand, Explore and Materialize:</p>
               <div class="design-thinking">
                 <a href="#modal" data-modal class="design-thinking__item">
                   <svg width="512px" height="512px"><use href="#icon-understand" /></svg>
@@ -71,6 +71,7 @@
               <hr>
               <h3>Usability Testing at Bizagi</h3>
               <h4>Elements: <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></h4>
+              <p>Sadly Bizagi can't gather data of use from his products, why? Maybe an outdated privacy policy or something else. So to test their products I did some research and find the Usability Testing method.</p>
               <p>Allows product team identifies user frustrations and problems. To achieve that, I did more than fifty interviews to confirm pain points or uncover new ones, and report <strong>insights</strong> for iterate over the products.</p>
               <hr>
               <h3>UX Design (<abbr title="Information architecture">ia</abbr> and flows)</h3>
@@ -82,12 +83,11 @@
           <footer class="spacecraft-stage spacecraft-stage--dark">
             <h2 id="contact"><svg class="img-title" width="48" height="48"><use href="#icon-contact" /></svg><span>Contact</span></h2>
             <div id="modal" class="modal">
-              <h1>Giordano Bruno</h1>
-              <p>Giordano Bruno (/dʒɔːrˈdɑːnoʊ ˈbruːnoʊ/; Italian: [dʒorˈdano ˈbruno]; Latin: Iordanus Brunus Nolanus; 1548 – 17 February 1600), born Filippo Bruno, was an Italian Dominican friar, philosopher, mathematician, poet, and cosmological theorist.[3] He is known for his cosmological theories, which conceptually extended the then-novel Copernican model. He proposed that the stars were just distant suns surrounded by their own exoplanets and raised the possibility that these planets could even foster life of their own (a philosophical position known as cosmic pluralism). He also insisted that the universe is in fact infinite and could have no celestial body at its "center".</p>
-              <p>Starting in 1593, Bruno was tried for heresy by the Roman Inquisition on charges of denial of several core Catholic doctrines, including eternal damnation, the Trinity, the divinity of Christ, the virginity of Mary, and transubstantiation. Bruno's pantheism was also a matter of grave concern,[4] as was his teaching of the transmigration of the soul (reincarnation). The Inquisition found him guilty, and he was burned at the stake in Rome's Campo de' Fiori in 1600. After his death, he gained considerable fame, being particularly celebrated by 19th- and early 20th-century commentators who regarded him as a martyr for science,[5] although historians have debated the extent to which his heresy trial was a response to his astronomical views or to other aspects of his philosophy and theology.[6][7][8][9][10] Bruno's case is still considered a landmark in the history of free thought and the emerging sciences.[11][12][13]</p>
+              <h1>Understand</h1>
+              <p>I learn about the problem and the intended audience by developing empathy to uncover people’s wants and needs. So to find the famous pain points I used three research methods: Heuristic Evaluation, Individual Interviews and Usability Testing.</p>
             </div>
 
-            <form class="form" action="/my-handling-form-page" method="post" data-validate>
+            <form class="form" action="includes/contact.php" method="post" data-validate>
                 <div class="form-illustration">
                     <p class="form-intro">Be part of my work, and let's have some fun.</p>
                     <img src="img/alien.svg" alt="" class="">
