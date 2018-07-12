@@ -14,13 +14,13 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <!--[if lte IE 9]>
+        <!--[if lte IE 11]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         <?php include_once("includes/iconography.php"); ?>
         <div class="spacecraft">
           <header id="header" class="spacecraft-command">
-            <img src="img/space-guy.svg" alt="" class="img-space-guy">
+            <?php include_once("includes/icon-astronaut.php"); ?>
             <nav>
               <ul class="nav">
                 <li class="nav__item"><a href="#about"><svg viewBox="0 0 96 96"><use xlink:href="#icon-about" /></svg><span>About</span></a></li>
@@ -36,12 +36,12 @@
               <h1 class="summary">I'm a <strong>designer</strong> who tries to answer the most challenging questions in design.</h1>
             </div>
             <div class="spacecraft-stage spacecraft-stage--dark">
-              <h2 id="about"><svg viewBox="0 0 96 96" class="img-title"><use xlink:href="#icon-about" /></svg><span>About</span></h2>
+              <h2 id="about"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-about" /></svg><span>About</span></h2>
               <h3>Jair Cárdenas (<abbr title="Also known as">aka</abbr> <em>cipionhabla</em>):</h3>
               <p>I focus on understanding user expectations, behaviors, needs, and motivations through methodical, investigative approaches. So I provide <strong>insights</strong> to ensure that all product design decisions do <strong>benefit the user</strong>.</p>
             </div>
             <div class="spacecraft-stage spacecraft-stage--light">
-              <h2 id="work"><svg viewBox="0 0 96 96" class="img-title"><use xlink:href="#icon-work" /></svg><span>Work</span></h2>
+              <h2 id="work"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-work" /></svg><span>Work</span></h2>
               <p class="space-stack-m">I worked on the following projects from conception, implementation, and, in some cases, development.</p>
               <h3>Bizagi App</h3>
               <h4>Elements: <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></h4>
@@ -74,7 +74,7 @@
             </div>
           </main>
           <footer class="spacecraft-stage spacecraft-stage--dark">
-            <h2 id="contact"><svg viewBox="0 0 96 96" class="img-title"><use xlink:href="#icon-contact" /></svg><span>Contact</span></h2>
+            <h2 id="contact"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-contact" /></svg><span>Contact</span></h2>
             <div id="modal" class="modal">
               <h1>Understand</h1>
               <p>I learn about the problem and the intended audience by developing empathy to uncover people’s wants and needs. So to find the famous pain points I used three research methods: Heuristic Evaluation, Individual Interviews and Usability Testing.</p>
@@ -83,7 +83,7 @@
             <form class="form" action="includes/contact.php" method="post" data-validate>
                 <div class="form-illustration">
                     <p class="form-intro">Be part of my work, and let's have some fun.</p>
-                    <img src="img/alien.svg" alt="" class="">
+                    <?php include_once("includes/icon-alien.php"); ?>
                 </div>
                 <div class="form-wrapper">
                   <div class="form-group">

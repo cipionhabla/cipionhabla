@@ -2,16 +2,71 @@
    #Illustrations
    ========================================================================== */
 
-.img-space-guy {
+.icon-astronaut {
   position: absolute;
   top: -280px;
   left: 50%;
-  margin-left: -128px;
-  width: 100%;
   max-width: 256px;
+  transform: translateX(-50%);
 }
 
-.img-title {
+.icon-alien {
+  animation: vibrate .3s linear infinite both;
+}
+
+.icon-title {
   max-width: 48px;
   vertical-align: bottom;
+}
+
+.blink {
+  animation: 3s infinite alternate blink;
+}
+
+@keyframes blink {
+  0% {
+    ry: 5;
+    animation-timing-function: ease-in;
+  }
+
+  95% {
+    ry: 5;
+  }
+
+  100% {
+    ry: 0;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes vibrate {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
 }
