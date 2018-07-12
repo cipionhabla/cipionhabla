@@ -1,13 +1,10 @@
 .design-thinking {
   display: flex;
+  justify-content: space-between;
   margin-bottom: $space-stack-m;
 
   &__item {
-    margin-right: $space-inline-l;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    width: 30%;
 
     > p {
       text-align: center;

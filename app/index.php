@@ -18,21 +18,14 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         <?php include_once("includes/iconography.php"); ?>
-        <div class="space">
-          <div class="stars"></div>
-          <div class="stars"></div>
-          <div class="stars"></div>
-          <div class="stars"></div>
-          <div class="stars"></div>
-        </div>
         <div class="spacecraft">
           <header id="header" class="spacecraft-command">
             <img src="img/space-guy.svg" alt="" class="img-space-guy">
             <nav>
               <ul class="nav">
-                <li class="nav__item"><a href="#about"><svg width="72" height="72"><use href="#icon-about" /></svg><span>About</span></a></li>
-                <li class="nav__item"><a href="#work"><svg width="72" height="72"><use href="#icon-work" /></svg><span>Work</span></a></li>
-                <li class="nav__item"><a href="#contact"><svg width="72" height="72"><use href="#icon-contact" /></svg><span>Contact</span></a></li>
+                <li class="nav__item"><a href="#about"><svg viewBox="0 0 96 96"><use xlink:href="#icon-about" /></svg><span>About</span></a></li>
+                <li class="nav__item"><a href="#work"><svg viewBox="0 0 96 96"><use xlink:href="#icon-work" /></svg><span>Work</span></a></li>
+                <li class="nav__item"><a href="#contact"><svg viewBox="0 0 96 96"><use xlink:href="#icon-contact" /></svg><span>Contact</span></a></li>
               </ul>
             </nav>
 
@@ -43,12 +36,12 @@
               <h1 class="summary">I'm a <strong>designer</strong> who tries to answer the most challenging questions in design.</h1>
             </div>
             <div class="spacecraft-stage spacecraft-stage--dark">
-              <h2 id="about"><svg class="img-title" width="48" height="48"><use href="#icon-about" /></svg><span>About</span></h2>
+              <h2 id="about"><svg viewBox="0 0 96 96" class="img-title"><use xlink:href="#icon-about" /></svg><span>About</span></h2>
               <h3>Jair Cárdenas (<abbr title="Also known as">aka</abbr> <em>cipionhabla</em>):</h3>
               <p>I focus on understanding user expectations, behaviors, needs, and motivations through methodical, investigative approaches. So I provide <strong>insights</strong> to ensure that all product design decisions do <strong>benefit the user</strong>.</p>
             </div>
             <div class="spacecraft-stage spacecraft-stage--light">
-              <h2 id="work"><svg class="img-title" width="48" height="48"><use href="#icon-work" /></svg><span>Work</span></h2>
+              <h2 id="work"><svg viewBox="0 0 96 96" class="img-title"><use xlink:href="#icon-work" /></svg><span>Work</span></h2>
               <p class="space-stack-m">I worked on the following projects from conception, implementation, and, in some cases, development.</p>
               <h3>Bizagi App</h3>
               <h4>Elements: <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></h4>
@@ -56,15 +49,15 @@
               <p class="indent space-stack-m">So the <strong>goal was to make a redesign to improve the overall experience</strong>. And I, under the methodology of Design Thinking, focused on three main steps: Understand, Explore and Materialize:</p>
               <div class="design-thinking">
                 <a href="#modal" data-modal class="design-thinking__item">
-                  <svg width="512px" height="512px"><use href="#icon-understand" /></svg>
+                  <svg viewBox="0 0 96 96"><use xlink:href="#icon-understand" /></svg>
                   <p>Understand</p>
                 </a>
                 <a href="#modal" data-modal class="design-thinking__item">
-                  <svg width="512px" height="512px"><use href="#icon-explore" /></svg>
+                  <svg viewBox="0 0 96 96"><use xlink:href="#icon-explore" /></svg>
                   <p>Explore</p>
                 </a>
                 <a href="#modal" data-modal class="design-thinking__item">
-                  <svg width="512px" height="512px"><use href="#icon-materialize" /></svg>
+                  <svg viewBox="0 0 96 96"><use xlink:href="#icon-materialize" /></svg>
                   <p>Materialize</p>
                 </a>
               </div>
@@ -81,7 +74,7 @@
             </div>
           </main>
           <footer class="spacecraft-stage spacecraft-stage--dark">
-            <h2 id="contact"><svg class="img-title" width="48" height="48"><use href="#icon-contact" /></svg><span>Contact</span></h2>
+            <h2 id="contact"><svg viewBox="0 0 96 96" class="img-title"><use xlink:href="#icon-contact" /></svg><span>Contact</span></h2>
             <div id="modal" class="modal">
               <h1>Understand</h1>
               <p>I learn about the problem and the intended audience by developing empathy to uncover people’s wants and needs. So to find the famous pain points I used three research methods: Heuristic Evaluation, Individual Interviews and Usability Testing.</p>
@@ -110,7 +103,7 @@
                   </div>
                 </div>
             </form>
-            <p class="spacecraft-copy">Copyright &copy; 2017, Bogotá Colombia</p>
+            <p class="spacecraft-copy">Copyright &copy; 2018, Bogotá Colombia</p>
             <p class="spacecraft-signature"><a href="#modal" class="logo" data-modal><svg width="32" height="32"><use href="#cipionhabla" /></svg>cipionhabla</a></p>
             <div class="aileron aileron--left"></div>
             <div class="aileron aileron--right"></div>
@@ -126,7 +119,10 @@
             </div>
           </footer>
         </div>
-
+        <div class="space">
+          <div class="stars"></div>
+          <div class="star"></div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <!-- build:js js/main.min.js -->
