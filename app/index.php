@@ -33,20 +33,24 @@
           <main>
             <div class="spacecraft-stage spacecraft-stage--light">
               <p class="summary-hi"><strong>Hello,</strong></p>
-              <h1 class="summary">I'm a <strong>designer</strong> who tries to answer the most challenging questions in design.</h1>
+              <h1 class="summary">I'm a <strong>designer</strong> who tries to resolve the most challenging problems in design.</h1>
             </div>
             <div class="spacecraft-stage spacecraft-stage--dark">
               <h2 id="about"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-about" /></svg><span>About</span></h2>
               <h3>Jair Cárdenas (<abbr title="Also known as">aka</abbr> <em>cipionhabla</em>):</h3>
-              <p>I focus on understanding user expectations, behaviors, needs, and motivations through methodical, investigative approaches. So I provide <strong>insights</strong> to ensure that all product design decisions do <strong>benefit the user</strong>.</p>
+              <p>I focus on understanding user expectations, behaviors, needs, and motivations through methodical, investigative approaches. So I use <strong>insights</strong> to ensure that all product design decisions do <strong>benefit the user</strong>.</p>
             </div>
             <div class="spacecraft-stage spacecraft-stage--light">
               <h2 id="work"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-work" /></svg><span>Work</span></h2>
               <p class="space-stack-m">I worked on the following projects from conception, implementation, and, in some cases, development.</p>
-              <h3>Bizagi App</h3>
-              <h4>Elements: <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></h4>
-              <p>Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. But it's not all a bed of roses, the usability problems on the app was huge, especially in the login and navigation features.</p>
-              <p class="indent space-stack-m">So the <strong>goal was to make a redesign to improve the overall experience</strong>. And I, under the methodology of Design Thinking, focused on three main steps: Understand, Explore and Materialize:</p>
+              <h3>Bizagi Mobile App</h3>
+              <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></p>
+              <h4>Overview</h4>
+              <p class="space-stack-m">Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. It is a nice product, but a quick one-on-one interviews and usability testing reveals that users are struggling with some issues while using the mobile app.</p>
+              <h4>Challenge</h4>
+              <p class="space-stack-m">The challenge is to understand users, discover pain points and propose a solution to improve their experiences.</p>
+              <h4>Process</h4>
+              <p class="space-stack-m">I started the process with one-on-one interviews and usability testing to understand current problems. During the following phase, I generate ideas and prototypes to validate the redesign. Finally, I return to the users for feedback and put the vision into effect. Now let’s go deeper into each step.</p>
               <div class="design-thinking">
                 <a href="#modal" data-modal class="design-thinking__item">
                   <svg viewBox="0 0 96 96"><use xlink:href="#icon-understand" /></svg>
@@ -63,7 +67,7 @@
               </div>
               <hr>
               <h3>Usability Testing at Bizagi</h3>
-              <h4>Elements: <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></h4>
+              <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></p>
               <p>Sadly Bizagi can't gather data of use from his products, why? Maybe an outdated privacy policy or something else. So to test their products I did some research and find the Usability Testing method.</p>
               <p>Allows product team identifies user frustrations and problems. To achieve that, I did more than fifty interviews to confirm pain points or uncover new ones, and report <strong>insights</strong> for iterate over the products.</p>
               <hr>
@@ -82,7 +86,7 @@
 
             <form class="form" action="includes/contact.php" method="post" data-validate>
                 <div class="form-illustration">
-                    <p class="form-intro">Be part of my work, and let's have some fun.</p>
+                    <p class="form-intro">Be part of my work, and make our goal to create happy and powered humans.</p>
                     <?php include_once("includes/icon-alien.php"); ?>
                 </div>
                 <div class="form-wrapper">
