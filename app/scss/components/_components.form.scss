@@ -74,9 +74,10 @@
   background-color: $color-red-space;
   color: $color-content;
   cursor: pointer;
+  transition: background-color .3s ease;
 
   &:hover {
-    background-color: darken($color-red-space, 10%);
+    background-color: $blue-sky;
   }
 }
 

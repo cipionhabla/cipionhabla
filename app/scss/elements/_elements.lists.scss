@@ -1,0 +1,15 @@
+.list {
+  padding: $space-inset-m;
+  font-size: $font-size-l;
+  @media only screen and (min-width: 50em) {
+    font-size: 1.8rem;
+  }
+
+  .list__item {
+    margin-bottom: $space-stack-s;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

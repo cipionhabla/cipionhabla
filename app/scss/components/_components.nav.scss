@@ -3,19 +3,25 @@
    ========================================================================== */
 
 .nav {
-  padding-left: 0;
   margin-bottom: $space-stack-l;
   text-align: center;
+  list-style: none;
 }
 
 .nav__item {
   display: inline-block;
-  margin-left: $space-inline-m;
-  font-size: $font-size-xl;
+  width: 96px;
+  font-size: $font-size-l;
   font-weight: bold;
 
-  &:first-child {
-    margin-left: 0 !important;
+  @media only screen and (min-width: 35em) {
+    width: 112px;
+    margin-right: $space-inline-l;
+    font-size: $font-size-xl;
+  }
+
+  &:last-child {
+    margin-right: 0;
   }
 
   > a {
@@ -25,10 +31,11 @@
       display: block;
       max-width: 72px;
       margin: 0 auto;
+
+      @media only screen and (min-width: 35em) {
+        max-width: 96px;
+      }
     }
   }
 
-  @media only screen and (min-width: 35em) {
-    margin-left: $space-inline-l;
-  }
 }

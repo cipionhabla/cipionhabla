@@ -28,14 +28,13 @@ figure,
 hr,
 table,
 fieldset {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
-dd,
-ol,
-ul {
-  margin-left: 0;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .space-stack-s {

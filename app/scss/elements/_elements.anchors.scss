@@ -4,8 +4,9 @@
 
 a {
   color: $color-red-space;
+  transition: color .3s ease;
 
   &:hover {
-    color: darken($color-red-space, 10%);
+    color: $blue-sky;
   }
 }

@@ -46,13 +46,13 @@
               <h3>Bizagi Mobile App</h3>
               <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></p>
               <h4>Overview</h4>
-              <p class="space-stack-m">Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. It is a nice product, but a quick one-on-one interviews and usability testing reveals that users are struggling with some issues while using the mobile app.</p>
+              <p class="space-stack-m">Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. It is a nice product, but quick individual interviews and usability testing reveals that users are struggling with some issues while using the mobile app.</p>
               <h4>Challenge</h4>
               <p class="space-stack-m">The challenge is to understand users, discover pain points and propose a solution to improve their experiences.</p>
               <h4>Process</h4>
-              <p class="space-stack-m">I started the process with one-on-one interviews and usability testing to understand current problems. During the following phase, I generate ideas and prototypes to validate the redesign. Finally, I return to the users for feedback and put the vision into effect. Now let’s go deeper into each step.</p>
+              <p class="space-stack-m">I started the process with quick individual interviews and usability testing to understand current problems. During the following phase, I generate ideas and prototypes to validate the redesign. Finally, I return to the users for feedback and put the vision into effect. Now let’s go deeper into each step.</p>
               <div class="design-thinking">
-                <a href="#modal" data-modal class="design-thinking__item">
+                <a href="includes/understand.html" rel="modal:open" data-modal class="design-thinking__item">
                   <svg viewBox="0 0 96 96"><use xlink:href="#icon-understand" /></svg>
                   <p>Understand</p>
                 </a>
@@ -68,8 +68,10 @@
               <hr>
               <h3>Usability Testing at Bizagi</h3>
               <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></p>
-              <p>Sadly Bizagi can't gather data of use from his products, why? Maybe an outdated privacy policy or something else. So to test their products I did some research and find the Usability Testing method.</p>
-              <p>Allows product team identifies user frustrations and problems. To achieve that, I did more than fifty interviews to confirm pain points or uncover new ones, and report <strong>insights</strong> for iterate over the products.</p>
+              <h4>Overview</h4>
+              <p class="space-stack-m">Sadly, at Bizagi there are assumptions and requirements aren't ever questioned or tested. Validation is considered harmful to projects.</p>
+              <h4>Challenge</h4>
+              <p class="space-stack-m">The challenge is to use experimentation, test the assumptions and requirements to discover their validity when it's cheapest to do so.</p>
               <hr>
               <h3>UX Design (<abbr title="Information architecture">ia</abbr> and flows)</h3>
               <h4>Genome: A Design System for Bizagi</h4>
