@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>cipionhabla&thinsp;&middot;&thinsp;A designer specialized in User Research</title>
+        <title>cipionhabla&thinsp;&middot;&thinsp;A designer specialized in research</title>
         <meta name="description" content="I focus on understanding user expectations, behaviors, needs, and motivations through methodical, investigative approaches. Moreover, I love working in the fields of UX Design, Visual Design, and Agile Development.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 

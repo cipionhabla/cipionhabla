@@ -81,9 +81,8 @@
 @import "elements/elements.page";
 @import "elements/elements.headings";
 @import "elements/elements.paragraphs";
-@import "elements/elements.lists";
 @import "elements/elements.anchors";
-// @import "elements/elements.images";
+@import "elements/elements.figure";
 @import "elements/elements.forms";
 @import "elements/elements.svg";
 @import "elements/elements.abbreviations";
@@ -116,6 +115,7 @@
 @import "components/components.form";
 @import "components/components.modal";
 @import "components/components.badge";
+@import "components/components.lists";
 
 // UTILITIES
 // @import "utilities/utilities.clearfix";
