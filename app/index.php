@@ -5,7 +5,7 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>cipionhabla&thinsp;&middot;&thinsp;A designer specialized in research</title>
         <meta name="description" content="I focus on understanding user expectations, behaviors, needs, and motivations through methodical, investigative approaches. Moreover, I love working in the fields of UX Design, Visual Design, and Agile Development.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
@@ -42,21 +42,21 @@
             </div>
             <div class="spacecraft-stage spacecraft-stage--light">
               <h2 id="work"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-work" /></svg><span>Work</span></h2>
-              <p class="space-stack-m">I worked on the following projects from conception, implementation, and, in some cases, development.</p>
+              <p class="space-stack--m">I worked on the following projects from conception, implementation, and, in some cases, development.</p>
               <h3>Bizagi Mobile App</h3>
               <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></p>
               <h4>Overview</h4>
-              <p class="space-stack-m">Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. It is a nice product, but quick individual interviews and usability testing reveals that users are struggling with some issues while using the mobile app.</p>
+              <p class="space-stack--m">Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. It is a nice product, but quick individual interviews and usability testing reveals that users are struggling with some issues while using the mobile app.</p>
               <h4>Challenge</h4>
-              <p class="space-stack-m">The challenge is to understand users, discover pain points and propose a solution to improve their experiences.</p>
+              <p class="space-stack--m">The challenge is to understand users, discover pain points and propose a solution to improve their experiences.</p>
               <h4>Process</h4>
-              <p class="space-stack-m">I started the process with quick individual interviews and usability testing to understand current problems. During the following phase, I generate ideas and prototypes to validate the redesign. Finally, I return to the users for feedback and put the vision into effect. Now let’s go deeper into each step.</p>
+              <p class="space-stack--m">I started the process with quick individual interviews and usability testing to understand current problems. During the following phase, I generate ideas and prototypes to validate the redesign. Finally, I return to the users for feedback and put the vision into effect. Now let’s go deeper into each step.</p>
               <div class="design-thinking">
                 <a href="includes/understand.html" rel="modal:open" data-modal class="design-thinking__item">
                   <svg viewBox="0 0 96 96"><use xlink:href="#icon-understand" /></svg>
                   <p>Understand</p>
                 </a>
-                <a href="#modal" data-modal class="design-thinking__item">
+                <a href="includes/explore.html" rel="modal:open" data-modal class="design-thinking__item">
                   <svg viewBox="0 0 96 96"><use xlink:href="#icon-explore" /></svg>
                   <p>Explore</p>
                 </a>
@@ -65,13 +65,14 @@
                   <p>Materialize</p>
                 </a>
               </div>
+              <h4>Conclusion</h4>
               <hr>
               <h3>Usability Testing at Bizagi</h3>
               <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></p>
               <h4>Overview</h4>
-              <p class="space-stack-m">Sadly, at Bizagi there are assumptions and requirements aren't ever questioned or tested. Validation is considered harmful to projects.</p>
+              <p class="space-stack--m">Sadly, at Bizagi there are assumptions and requirements aren't ever questioned or tested. Validation is considered harmful to projects.</p>
               <h4>Challenge</h4>
-              <p class="space-stack-m">The challenge is to use experimentation, test the assumptions and requirements to discover their validity when it's cheapest to do so.</p>
+              <p class="space-stack--m">The challenge is to use experimentation, test the assumptions and requirements to discover their validity when it's cheapest to do so.</p>
               <hr>
               <h3>UX Design (<abbr title="Information architecture">ia</abbr> and flows)</h3>
               <h4>Genome: A Design System for Bizagi</h4>
@@ -81,11 +82,6 @@
           </main>
           <footer class="spacecraft-stage spacecraft-stage--dark">
             <h2 id="contact"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-contact" /></svg><span>Contact</span></h2>
-            <div id="modal" class="modal">
-              <h1>Understand</h1>
-              <p>I learn about the problem and the intended audience by developing empathy to uncover people’s wants and needs. So to find the famous pain points I used three research methods: Heuristic Evaluation, Individual Interviews and Usability Testing.</p>
-            </div>
-
             <form class="form" action="includes/contact.php" method="post" data-validate>
                 <div class="form-illustration">
                     <p class="form-intro">Be part of my work, and make our goal to create happy and powered humans.</p>

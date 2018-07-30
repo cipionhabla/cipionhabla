@@ -63,7 +63,7 @@
  */
 
 // SETTINGS
-@import "settings/example.settings.global";
+@import "settings/settings.global";
 
 // TOOLS
 // @import "tools/tools.font-size";
@@ -123,7 +123,7 @@
 // $inuit-offsets: true;
 // @import "utilities/utilities.widths";
 // @import "utilities/utilities.headings";
-// @import "utilities/utilities.spacings";
+@import "utilities/utilities.spacings";
 // @import "utilities/utilities.responsive-spacings";
 // @import "utilities/utilities.print";
 // @import "utilities/utilities.hide";
