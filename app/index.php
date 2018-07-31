@@ -60,7 +60,7 @@
                   <svg viewBox="0 0 96 96"><use xlink:href="#icon-explore" /></svg>
                   <p>Explore</p>
                 </a>
-                <a href="#modal" data-modal class="design-thinking__item">
+                <a href="includes/materialize.html" rel="modal:open" data-modal class="design-thinking__item">
                   <svg viewBox="0 0 96 96"><use xlink:href="#icon-materialize" /></svg>
                   <p>Materialize</p>
                 </a>
