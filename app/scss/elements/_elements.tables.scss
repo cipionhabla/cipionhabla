@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #Tables
+   ========================================================================== */
+table {
+  width: 100%;
+  font-size: $font-size-l;
+  line-height: 1.25;
+
+  tr > th {
+    padding: $space-inset-s;
+
+    &[scope="col"] {
+      text-align: left;
+
+      &:first-child {
+        text-align: right;
+      }
+    }
+
+    &[scope="row"] {
+      font-weight: normal;
+      text-align: right;
+    }
+  }
+
+  tr > td {
+    padding: $space-inset-s;
+  }
+
+}
+
+.table-icon {
+  width: 32px;
+  height: 32px;
+}
