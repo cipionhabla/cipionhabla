@@ -74,7 +74,7 @@
                 </div>
             </form>
             <p class="spacecraft-copy">Copyright &copy; 2018, Bogotá Colombia</p>
-            <p class="spacecraft-signature"><a href="#" class="logo" data-modal><svg width="32" height="32"><use href="#cipionhabla" /></svg>cipionhabla</a></p>
+            <p class="spacecraft-signature"><a href="#" class="logo" data-modal><svg width="32" height="32"><use xlink:href="#cipionhabla" /></svg>cipionhabla</a></p>
             <div class="aileron aileron--left"></div>
             <div class="aileron aileron--right"></div>
             <div class="engine">
