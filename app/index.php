@@ -42,20 +42,10 @@
             </div>
             <div class="spacecraft-stage spacecraft-stage--light">
               <h2 id="work"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-work" /></svg><span>Work</span></h2>
-              <p class="space-stack--m">I worked on the following projects from conception, implementation, and, in some cases, development.</p>
+              <p class="space-stack--m">The following are the most important and recent projects. I worked on those from conception, implementation, and, in some cases, development.</p>
               <?php include_once("includes/section-bizagi-mobile-app.php"); ?>
               <hr>
-              <h3>Usability Testing at Bizagi</h3>
-              <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></p>
-              <h4>Overview</h4>
-              <p class="space-stack--m">Sadly, at Bizagi there are assumptions and requirements aren't ever questioned or tested. Validation is considered harmful to projects.</p>
-              <h4>Challenge</h4>
-              <p class="space-stack--m">The challenge is to use experimentation, test the assumptions and requirements to discover their validity when it's cheapest to do so.</p>
-              <hr>
-              <h3>UX Design (<abbr title="Information architecture">ia</abbr> and flows)</h3>
-              <h4>Genome: A Design System for Bizagi</h4>
-              <p>Enables developers and designers to build rich enterprise experiences with the patterns and established best practices that are native to Bizagi. In addition solves ineffective workflow, company reliability, and user experience.</p>
-
+              <?php include_once("includes/section-bizagi-usability-testing.php"); ?>
             </div>
           </main>
           <footer class="spacecraft-stage spacecraft-stage--dark">

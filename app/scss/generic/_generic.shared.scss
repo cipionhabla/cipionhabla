@@ -37,6 +37,17 @@ img {
   height: auto;
 }
 
+iframe {
+  width: 100%;
+  height: auto;
+  min-height: 315px;
+}
+
+figcaption {
+  margin-top: $space-stack-s;
+  font-size: $font-size-s;
+  text-align: center;
+}
 
 .browserupgrade {
   margin: .2em 0;

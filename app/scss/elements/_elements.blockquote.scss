@@ -1,0 +1,23 @@
+blockquote {
+  background: $blue-light;
+  border-radius: $border-radius-m;
+}
+
+blockquote p {
+  padding: $space-inset-m;
+  margin-bottom: $space-stack-s;
+
+  &::before {
+    content: "\201C";
+  }
+
+  &::after {
+    content: "\201D";
+  }
+}
+
+cite {
+  display: block;
+  margin-bottom: $space-stack-s;
+  font-size: $font-size-s;
+}

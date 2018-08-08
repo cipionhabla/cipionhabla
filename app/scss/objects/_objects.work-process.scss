@@ -1,7 +1,11 @@
-.design-thinking {
+.work-process {
   display: flex;
   justify-content: space-between;
   margin-bottom: $space-stack-m;
+
+  @media only screen and (min-width: 35em) {
+    margin-bottom: 2.4rem;
+  }
 
   &__item {
     width: 30%;

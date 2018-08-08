@@ -6,7 +6,7 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 
 gulp.task('includes', function() {
-  return gulp.src('app/includes/*.php')
+  return gulp.src('app/includes/*')
   .pipe(gulp.dest('dist/includes'))
 })
 

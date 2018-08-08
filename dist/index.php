@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>cipionhabla&thinsp;&middot;&thinsp;A designer specialized in User Research</title>
+        <title>cipionhabla&thinsp;&middot;&thinsp;A designer specialized in research</title>
         <meta name="description" content="I focus on understanding user expectations, behaviors, needs, and motivations through methodical, investigative approaches. Moreover, I love working in the fields of UX Design, Visual Design, and Agile Development.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
@@ -42,49 +42,15 @@
             </div>
             <div class="spacecraft-stage spacecraft-stage--light">
               <h2 id="work"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-work" /></svg><span>Work</span></h2>
-              <p class="space-stack-m">I worked on the following projects from conception, implementation, and, in some cases, development.</p>
-              <h3>Bizagi Mobile App</h3>
-              <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">Design Thinking</span> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">UX Design</span> <span class="badge badge--primary">Visual Design</span></p>
-              <h4>Overview</h4>
-              <p class="space-stack-m">Bizagi designs and develops enterprise software for <abbr title="Business Process Management">bpm</abbr>, and his mobile app allow users to execute and control their business processes anywhere. It is a nice product, but a quick one-on-one interviews and usability testing reveals that users are struggling with some issues while using the mobile app.</p>
-              <h4>Challenge</h4>
-              <p class="space-stack-m">The challenge is to understand users, discover pain points and propose a solution to improve their experiences.</p>
-              <h4>Process</h4>
-              <p class="space-stack-m">I started the process with one-on-one interviews and usability testing to understand current problems. During the following phases, I generate ideas and prototypes to validate the redesign. Finally, I return to the users for feedback and put the vision into effect. Now let’s go deeper into each step.</p>
-              <div class="design-thinking">
-                <a href="#modal" data-modal class="design-thinking__item">
-                  <svg viewBox="0 0 96 96"><use xlink:href="#icon-understand" /></svg>
-                  <p>Understand</p>
-                </a>
-                <a href="#modal" data-modal class="design-thinking__item">
-                  <svg viewBox="0 0 96 96"><use xlink:href="#icon-explore" /></svg>
-                  <p>Explore</p>
-                </a>
-                <a href="#modal" data-modal class="design-thinking__item">
-                  <svg viewBox="0 0 96 96"><use xlink:href="#icon-materialize" /></svg>
-                  <p>Materialize</p>
-                </a>
-              </div>
+              <p class="space-stack--m">The following are the most important and recent projects. I worked on those from conception, implementation, and, in some cases, development.</p>
+              <?php include_once("includes/section-bizagi-mobile-app.php"); ?>
               <hr>
-              <h3>Usability Testing at Bizagi</h3>
-              <p class="badge-title"><em>Elements:</em> <span class="badge badge--primary">User Research</span> <span class="badge badge--primary">Scientific Method</span></p>
-              <p>Sadly Bizagi can't gather data of use from his products, why? Maybe an outdated privacy policy or something else. So to test their products I did some research and find the Usability Testing method.</p>
-              <p>Allows product team identifies user frustrations and problems. To achieve that, I did more than fifty interviews to confirm pain points or uncover new ones, and report <strong>insights</strong> for iterate over the products.</p>
-              <hr>
-              <h3>UX Design (<abbr title="Information architecture">ia</abbr> and flows)</h3>
-              <h4>Genome: A Design System for Bizagi</h4>
-              <p>Enables developers and designers to build rich enterprise experiences with the patterns and established best practices that are native to Bizagi. In addition solves ineffective workflow, company reliability, and user experience.</p>
-
+              <?php include_once("includes/section-bizagi-usability-testing.php"); ?>
             </div>
           </main>
           <footer class="spacecraft-stage spacecraft-stage--dark">
             <h2 id="contact"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-contact" /></svg><span>Contact</span></h2>
-            <div id="modal" class="modal">
-              <h1>Understand</h1>
-              <p>I learn about the problem and the intended audience by developing empathy to uncover people’s wants and needs. So to find the famous pain points I used three research methods: Heuristic Evaluation, Individual Interviews and Usability Testing.</p>
-            </div>
-
-            <form class="form" action="includes/contact.php" method="post" data-validate>
+            <form class="form" action="includes/form-contact.php" method="post" data-validate>
                 <div class="form-illustration">
                     <p class="form-intro">Be part of my work, and make our goal to create happy and powered humans.</p>
                     <?php include_once("includes/icon-alien.php"); ?>
@@ -108,7 +74,7 @@
                 </div>
             </form>
             <p class="spacecraft-copy">Copyright &copy; 2018, Bogotá Colombia</p>
-            <p class="spacecraft-signature"><a href="#modal" class="logo" data-modal><svg width="32" height="32"><use href="#cipionhabla" /></svg>cipionhabla</a></p>
+            <p class="spacecraft-signature"><a href="#" class="logo" data-modal><svg width="32" height="32"><use href="#cipionhabla" /></svg>cipionhabla</a></p>
             <div class="aileron aileron--left"></div>
             <div class="aileron aileron--right"></div>
             <div class="engine">
