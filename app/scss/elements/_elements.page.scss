@@ -18,6 +18,11 @@ body {
   @media only screen and (min-width: 35em) {
     padding-bottom: 60rem;
   }
+
+  &.modal-active {
+    -webkit-overflow-scrolling: hidden;
+    overflow: hidden;
+  }
 }
 
 hr {

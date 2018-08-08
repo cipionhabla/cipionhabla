@@ -1,12 +1,11 @@
 <?php
 header("Content-type: text/html; charset=utf-8");
-$EmailFrom = "contacto@covi.com.co";
-$EmailTo = "jair@covi.com.co";
+$EmailFrom = "jair@cipionhabla.me";
+$EmailTo = "cipionhabla@gmail.com";
 $Subject = "Formulario de contacto";
-$nombre = Trim(stripslashes($_POST['nombre']));
-$correo = Trim(stripslashes($_POST['correo']));
-$asunto = Trim(stripslashes($_POST['asunto']));
-$mensaje = Trim(stripslashes($_POST['mensaje']));
+$user_name = Trim(stripslashes($_POST['user_name']));
+$user_mail = Trim(stripslashes($_POST['user_mail']));
+$user_message = Trim(stripslashes($_POST['user_message']));
 
 // validation
 $validationOK=true;
@@ -18,16 +17,13 @@ if (!$validationOK) {
 // prepare email body text
 $Body = "";
 $Body .= "Nombre: ";
-$Body .= $nombre;
+$Body .= $user_name;
 $Body .= "\n";
 $Body .= "Correo: ";
-$Body .= $correo;
-$Body .= "\n";
-$Body .= "Asunto: ";
-$Body .= $asunto;
+$Body .= $user_mail;
 $Body .= "\n";
 $Body .= "Mensaje: ";
-$Body .= $mensaje;
+$Body .= $user_message;
 $Body .= "\n";
 
 // send email
@@ -38,6 +34,6 @@ if ($success){
   print "<meta http-equiv=\"refresh\" content=\"0;URL=page-thanks.html\">";
 }
 else{
-  print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
+  print "<meta http-equiv=\"refresh\" content=\"0;URL=page-error.html\">";
 }
 ?>
