@@ -25,9 +25,9 @@
 <table>
     <tbody>
       <tr>
-        <th scope="col" width="30%"></th>
-        <th scope="col" width="35%">Before</th>
-        <th scope="col" width="35%">After</th>
+        <th scope="col" width="25%"></th>
+        <th scope="col">Before</th>
+        <th scope="col">After</th>
       </tr>
       <tr>
         <th scope="row">Ability to login easily</th>
