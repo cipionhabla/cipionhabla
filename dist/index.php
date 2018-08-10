@@ -33,7 +33,7 @@
           <main>
             <div class="spacecraft-stage spacecraft-stage--light">
               <p class="summary-hi"><strong>Hello,</strong></p>
-              <h1 class="summary">I'm a <strong>designer</strong> who tries to resolve the most challenging problems in design.</h1>
+              <h1 class="summary">I'm a designer who tries to resolve the most challenging problems in design.</h1>
             </div>
             <div class="spacecraft-stage spacecraft-stage--dark">
               <h2 id="about"><svg viewBox="0 0 96 96" class="icon-title"><use xlink:href="#icon-about" /></svg><span>About</span></h2>
